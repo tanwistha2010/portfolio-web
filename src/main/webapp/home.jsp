@@ -19,12 +19,7 @@
             </p>
         </div>
 
-        <div>
-            <img
-                src="https://via.placeholder.com/320x320.png?text=Profile"
-                alt="Profile"
-                class="profile-img">
-        </div>
+        
     </section>
 
     <section class="card">
