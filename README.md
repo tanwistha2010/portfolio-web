@@ -467,7 +467,7 @@ CMD ["catalina.sh", "run"]
 
 ## 🌍 Important URLs
 
-* 🔗 Live: [https://portfolio-web-production-4110.up.railway.app/](https://portfolio-web-production-4110.up.railway.app/)
+* 🔗 Live: [https://portfolio-web-production-4110.up.railway.app/register.jsp](https://portfolio-web-production-4110.up.railway.app/register.jsp)
 * 💻 Local: [http://localhost:8081/portfolio-web/](http://localhost:8081/portfolio-web/)
 
 ### Direct Pages
