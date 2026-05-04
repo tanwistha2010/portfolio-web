@@ -2,16 +2,10 @@
 <%@ include file="header.jsp" %>
 
 <main>
-    <section class="card grid-2">
+    <section class="card">
         <div>
             <h2 class="section-title">About Me</h2>
             <p>${about.description}</p>
-        </div>
-
-        <div>
-            <img src="${pageContext.request.contextPath}/assets/images/profile.jpg"
-                 alt="Profile"
-                 class="profile-img">
         </div>
     </section>
 </main>

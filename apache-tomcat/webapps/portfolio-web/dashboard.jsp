@@ -16,12 +16,12 @@
 
         <div class="dashboard-actions">
             <a class="action-btn" href="${pageContext.request.contextPath}/project?action=add">
-                Add Project
+                Add Project  <br>
             </a>
 
             <a class="action-btn" href="${pageContext.request.contextPath}/skill?action=add">
-                Add Skill
-            </a>
+                Add Skill <br>
+            </a> 
 
             <a class="action-btn logout-btn" href="${pageContext.request.contextPath}/logout">
                 Logout

@@ -4,27 +4,19 @@
 
 <main>
 
-    <section class="card grid-2">
+    <section class="card">
         <div>
             <h2 class="section-title">Welcome to My Portfolio</h2>
 
             <p>
-                Hi! I'm a passionate developer building dynamic websites
-                with Java, JSP, Servlets, and MySQL.
+                Hi! I'm a passionate developer building dynamic websites with Java, JSP, Servlets, and MySQL.
             </p>
 
             <p>
-                This portfolio demonstrates responsive design,
-                secure authentication, and database-driven content rendering.
+                This portfolio demonstrates responsive design,secure authentication, and database-driven content rendering.
             </p>
         </div>
-
-        <div>
-            <img
-                src="https://via.placeholder.com/320x320.png?text=Profile"
-                alt="Profile"
-                class="profile-img">
-        </div>
+    
     </section>
 
     <section class="card">
