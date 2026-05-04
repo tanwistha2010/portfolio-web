@@ -11,7 +11,7 @@
                 Hi! I'm a passionate developer building dynamic websites with Java, JSP, Servlets, and MySQL.
             </p>
             <p>
-                This portfolio demonstrates responsive design,secure authentication, and database-driven content rendering.
+                This portfolio demonstrates responsive design,secure authentication, and database-driven content rendering. <br>
             </p>
         </div>
     

@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="header.jsp" %>
 <main>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/styles.css?v=2">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/styles.css?v=3">
 <script src="${pageContext.request.contextPath}/js/script.js"></script>
 
     <section class="card">
