@@ -10,15 +10,17 @@ import java.sql.SQLException;
 
 @WebServlet("/education")
 public class EducationServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         try {
             request.setAttribute("education", PortfolioDAO.getEducation());
-            request.getRequestDispatcher("education.jsp").forward(request, response);
         } catch (SQLException e) {
             request.setAttribute("error", "Unable to load education: " + e.getMessage());
-            request.getRequestDispatcher("education.jsp").forward(request, response);
         }
+
+        request.getRequestDispatcher("education.jsp").forward(request, response);
     }
 }

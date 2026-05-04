@@ -7,7 +7,7 @@ public class PortfolioDAO {
 
     // ---------------- ABOUT ----------------
     public static Map<String, String> getAbout() throws SQLException {
-        String sql = "SELECT title, description, profile_image FROM about WHERE id=1";
+        String sql = "SELECT title, description FROM about WHERE id=1";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql);
