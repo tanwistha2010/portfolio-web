@@ -9,9 +9,7 @@
         </div>
 
         <div>
-            <img src="${pageContext.request.contextPath}/assets/images/profile.jpg"
-                 alt="Profile"
-                 class="profile-img">
+            
         </div>
     </section>
 </main>

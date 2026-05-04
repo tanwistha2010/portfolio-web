@@ -17,7 +17,7 @@ public class PortfolioDAO {
                 Map<String, String> about = new HashMap<>();
                 about.put("title", rs.getString("title"));
                 about.put("description", rs.getString("description"));
-                about.put("image", rs.getString("profile_image"));
+               
                 return about;
             }
         }
