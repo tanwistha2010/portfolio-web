@@ -15,16 +15,12 @@ public class DBConnection {
     }
 
     public static Connection getConnection() throws SQLException {
+        String url = System.getenv("DATABASE_URL");
 
-        String host = System.getenv("MYSQLHOST");
-        String port = System.getenv("MYSQLPORT");
-        String database = System.getenv("MYSQLDATABASE");
-        String user = System.getenv("MYSQLUSER");
-        String password = System.getenv("MYSQLPASSWORD");
+        if (url == null || url.isEmpty()) {
+            throw new SQLException("DATABASE_URL environment variable is not set");
+        }
 
-        String url = "jdbc:mysql://" + host + ":" + port + "/" + database +
-                "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-
-        return DriverManager.getConnection(url, user, password);
+        return DriverManager.getConnection(url);
     }
 }
