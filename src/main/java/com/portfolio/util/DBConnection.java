@@ -15,12 +15,18 @@ public class DBConnection {
     }
 
     public static Connection getConnection() throws SQLException {
-        String url = System.getenv("DATABASE_URL");
+        String mysqlUrl = System.getenv("MYSQL_URL");
 
-        if (url == null || url.isEmpty()) {
-            throw new SQLException("DATABASE_URL environment variable is not set");
+        if (mysqlUrl == null || mysqlUrl.isEmpty()) {
+            throw new SQLException("MYSQL_URL environment variable is not set");
         }
 
-        return DriverManager.getConnection(url);
+        String jdbcUrl = mysqlUrl.replaceFirst("^mysql://", "jdbc:mysql://");
+
+        if (!jdbcUrl.contains("?")) {
+            jdbcUrl += "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+        }
+
+        return DriverManager.getConnection(jdbcUrl);
     }
 }
