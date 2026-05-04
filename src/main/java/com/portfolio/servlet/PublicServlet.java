@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(name = "PublicServlet", urlPatterns = {"/home", "/about", "/skills", "/projects", "/education", "/contact"})
+@WebServlet(name = "PublicServlet", urlPatterns = {"/home", "/about", "/skills", "/projects",  "/contact"})
 public class PublicServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,9 +35,6 @@ public class PublicServlet extends HttpServlet {
                 break;
             case "/projects":
                 request.getRequestDispatcher("projects.jsp").forward(request, response);
-                break;
-            case "/education":
-                request.getRequestDispatcher("education.jsp").forward(request, response);
                 break;
             case "/contact":
                 request.getRequestDispatcher("contact.jsp").forward(request, response);
