@@ -7,11 +7,9 @@
     <section class="card">
         <div>
             <h2 class="section-title">Welcome to My Portfolio</h2>
-
             <p>
                 Hi! I'm a passionate developer building dynamic websites with Java, JSP, Servlets, and MySQL.
             </p>
-
             <p>
                 This portfolio demonstrates responsive design,secure authentication, and database-driven content rendering.
             </p>
